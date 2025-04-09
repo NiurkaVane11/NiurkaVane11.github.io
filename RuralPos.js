@@ -3,6 +3,8 @@
 // RuralPos.js - Script principal para el sitio RuralPOS
 document.addEventListener('DOMContentLoaded', function() {
     // 1. Navegación suave para los enlaces del menú
+
+    
     document.querySelectorAll('#barra_superior_nav a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             e.preventDefault();
@@ -46,11 +48,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Mostrar la primera tarjeta por defecto
-    if (cards.length > 0) {
-        cards[0].style.display = 'block';
-        circles[0].style.backgroundColor = '#4CAF50';
-    }
+    
 
     // 3. Validación básica del formulario de contacto
     const contactForm = document.querySelector('#contacto form');
@@ -74,41 +72,11 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // 4. Mostrar la fecha actual en el elemento demojava
-    const demojavaElement = document.getElementById('demojava');
-    if (demojavaElement) {
-        const today = new Date();
-        const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-        demojavaElement.textContent = today.toLocaleDateString('es-ES', options);
-        demojavaElement.style.padding = '10px';
-        demojavaElement.style.color = '#4CAF50';
-        demojavaElement.style.fontWeight = 'bold';
-    }
+   
 
-    // 5. Efecto de hover para las tarjetas de funcionalidades
-    const features = document.querySelectorAll('.feature');
-    features.forEach(feature => {
-        feature.addEventListener('mouseover', function() {
-            this.style.transform = 'scale(1.02)';
-            this.style.transition = 'transform 0.3s ease';
-            this.style.boxShadow = '0 4px 8px rgba(0,0,0,0.1)';
-        });
-        
-        feature.addEventListener('mouseout', function() {
-            this.style.transform = 'scale(1)';
-            this.style.boxShadow = 'none';
-        });
-    });
+   
 
-    // 6. Cambiar el color del header al hacer scroll
-    window.addEventListener('scroll', function() {
-        const header = document.querySelector('#barra-superior');
-        if (window.scrollY > 100) {
-            header.style.backgroundColor = 'rgba(0,0,0,0.9)';
-        } else {
-            header.style.backgroundColor = ''; // Vuelve al color original
-        }
-    });
+    
 
 
 
