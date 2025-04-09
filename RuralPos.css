@@ -379,20 +379,7 @@ textarea {
     resize: vertical;
 }
 
-button {
-    background-color: var(--primary-color);
-    color: var(--light-text);
-    padding: 0.7rem 1.5rem;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 1rem;
-    transition: background-color 0.3s;
-}
 
-button:hover {
-    background-color: var(--accent-color);
-}
 
 /* Lists */
 ul, ol, dl {
@@ -911,19 +898,7 @@ footer {
 }
 
 
-.card-container {
-    display: flex;
-    overflow: hidden;
-}
 
-.card {
-    min-width: 300px;
-    margin: 10px;
-    padding: 20px;
-    background-color: lightblue;
-    border: 1px solid #ccc;
-    transition: transform 0.3s ease;
-}
 
 .testimonio_circulo{
     display: flex;
@@ -953,40 +928,13 @@ footer {
     font-family: 'Arial', sans-serif;
 }
 
-.card {
-    position: relative;
-    max-width: 300px;
-    padding: 30px 25px;
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    font-style: italic;
-    color: #555;
-    line-height: 1.6;
-}
 
-.card::before,
-.card::after {
-    position: absolute;
-    font-size: 60px;
-    color: rgba(0,0,0,0.1);
-    font-family: Georgia, serif;
-}
 
-.card::before {
-    content: "“";
-    top: 10px;
-    left: 10px;
-}
 
-.card::after {
-    content: "”";
-    bottom: -20px;
-    right: 10px;
-}
+
 
 /* Efecto hover opcional */
-.card:hover {
+.cardt:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 12px rgba(0,0,0,0.15);
     transition: all 0.3s ease;
@@ -1031,7 +979,7 @@ footer {
 }
 
 /* Estilo de las cartas individuales */
-.card {
+.cardt {
     position: relative;
     width: 320px;
     padding: 40px 30px;
@@ -1046,8 +994,8 @@ footer {
 }
 
 /* Comillas decorativas */
-.card::before,
-.card::after {
+.cardt::before,
+.cardt::after {
     position: absolute;
     font-size: 80px;
     color: rgba(52, 152, 219, 0.2);
@@ -1055,20 +1003,20 @@ footer {
     line-height: 1;
 }
 
-.card::before {
+.cardt::before {
     content: "“";
     top: 10px;
     left: 15px;
 }
 
-.card::after {
+.cardt::after {
     content: "”";
     bottom: -30px;
     right: 15px;
 }
 
 /* Efecto hover */
-.card:hover {
+.cardt:hover {
     transform: translateY(-10px);
     box-shadow: 0 15px 35px rgba(0,0,0,0.15);
 }
@@ -1080,7 +1028,7 @@ footer {
         align-items: center;
     }
     
-    .card {
+    .cardt {
         width: 80%;
     }
     
@@ -1098,50 +1046,8 @@ footer {
 
 
 
-#tutoriales {
-    font-family: Arial, sans-serif;
-    padding: 20px;
-}
 
-#tutoriales h2 {
-    text-align: center;
-    color: #333;
-    margin-bottom: 30px;
-}
 
-#tutoriales ol {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 15px;
-    padding: 0;
-    list-style: none;
-    counter-reset: tutorial-counter;
-}
-
-#tutoriales li {
-    counter-increment: tutorial-counter;
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    position: relative;
-}
-
-#tutoriales li::before {
-    content: counter(tutorial-counter);
-    position: absolute;
-    top: -10px;
-    left: -10px;
-    background: #e74c3c;
-    color: white;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-}
 
 ------------------------------------------------------
 /* Estilo mejorado para el botón de ir arriba */
@@ -1256,4 +1162,4 @@ footer {
       background-color: lightblue;
     }
   }
-  
+ 

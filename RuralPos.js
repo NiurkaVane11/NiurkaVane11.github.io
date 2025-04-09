@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // 2. Funcionalidad para los testimonios (círculos interactivos)
     const circles = document.querySelectorAll('.circle');
-    const cards = document.querySelectorAll('.card');
+    const cards = document.querySelectorAll('.cardt');
     
     circles.forEach(circle => {
         circle.addEventListener('click', function() {
